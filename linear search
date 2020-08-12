@@ -1,1 +1,58 @@
+Q: Write the code for the implementation of linear search.
+
+ALGORITHM:
+STEP 1: int a[n],x,i;
+STEP 2: i=1;
+STEP 3: if(i>n)
+STEP 4:  { printf("Element not found");
+STEP 5: 
+STEP 6:
+STEP 7:
+STEP 8:
+STEP 9:
+STEP 10:
+STEP 11:
+STEP 12:
+
+
+CODE:
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+main()
+{
+  int a[7];
+  int i,j,k;
+  int u=6;
+  int key;
+  j=1;
+  clrscr();
+  printf("\n Enter 7 values for the array:");
+  for(k=0;k<=6;k++)
+   {
+     scanf("%d",&a[k]);
+   }
+  while(j<=u)
+   {
+     key=a[j];
+     i=j-1;
+     while((i>-1)&&(a[i]>key))
+      {
+        a[i+1]=a[i];
+        i=i-1;
+      }
+
+     a[i+1]=key;
+     j=j+1;
+     printf("\n");
+     for(k=0;k<=6;k++)
+      {
+        printf("%d\t",a[k]);
+      }
+   }
+  getch();
+}
+
+
 
